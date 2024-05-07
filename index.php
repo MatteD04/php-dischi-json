@@ -16,9 +16,9 @@ leggere una lista di dischi presente nel nostro server. -->
 <body>
     <div id="app">
         <div class="container">
-            <div class="card">
+            <div class="card" v-for="discs in lists">
                 <div>foto</div>
-                <div>nome</div>
+                <div>{{ discs }}</div>
                 <div>autore</div>
                 <div>anno</div>
             </div>
