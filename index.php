@@ -14,16 +14,20 @@ leggere una lista di dischi presente nel nostro server. -->
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
-        <div class="container">
-            <div class="card" v-for="discs in lists">
-                <div>foto</div>
-                <div>{{ discs }}</div>
-                <div>autore</div>
-                <div>anno</div>
+    <main>
+        <div id="app">
+            <div class="container">
+                <div class="card" v-for="discs in lists">
+                    <div>
+                        <img :src="discs.poster">
+                    </div>
+                    <div>{{ discs.title }}</div>
+                    <div>{{ discs.author }}</div>
+                    <div>{{ discs.year }}</div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="js/script.js"></script>
 </body>
